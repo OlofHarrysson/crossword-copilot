@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: #ffffff;
+    --foreground: #171717;
+
+    /* Component colors */
+    --card: #ffffff;
+    --card-foreground: #171717;
+
+    --popover: #ffffff;
+    --popover-foreground: #171717;
+
+    --primary: #0ea5e9;
+    --primary-foreground: #ffffff;
+
+    --secondary: #f1f5f9;
+    --secondary-foreground: #0f172a;
+
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+
+    --accent: #f1f5f9;
+    --accent-foreground: #0f172a;
+
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+
+    /* Border radius */
+    --radius: 0.5rem;
+
+    /* Toast colors */
+    --toast-success: #10b981;
+    --toast-error: var(--destructive);
+    --toast-background: var(--background);
+    --toast-border: var(--border);
+    --toast-text: var(--foreground);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Add toast styles */
+@layer components {
+  .toast-success {
+    background-color: var(--toast-background) !important;
+    border: 1px solid var(--toast-success) !important;
+    color: var(--toast-text) !important;
+  }
+
+  .toast-error {
+    background-color: var(--toast-background) !important;
+    border: 1px solid var(--toast-error) !important;
+    color: var(--toast-text) !important;
+  }
+}

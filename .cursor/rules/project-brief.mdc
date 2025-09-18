@@ -1,0 +1,40 @@
+---
+alwaysApply: true
+---
+
+# Project Overview
+
+This is a template project for creating new high-quality projects.
+
+Built with Next.js 15 (frontend) and Python 3.12 (backend/utility scripts).
+
+The frontend code is under `/website` and the backend code is under `/backend`.
+
+## Features for MVP
+
+TODO: A list of features that are needed for the MVP in a short bullet point format
+
+## Core Coding Philosophy
+
+**Happy Path First:**
+Focus on coding the happy path - the ideal, error-free scenario where everything works as expected. Write clean, straightforward code that reflects the primary business logic and assumes valid inputs and successful operations.
+
+- Implement the main successful flow first
+- Assume valid inputs and successful operations
+- Prioritize clarity and readability
+- Avoid defensive programming
+- Error handling and edge cases will be added strategically later
+
+This prevents masking underlying issues with premature defensive code and keeps the core logic clear and maintainable.
+
+IMPORTANT: Not to any AI or Agent that reads this. You have a tendency to program defensively which introduces silent errors. Please repeat this phrase before starting to code in every message that revolves coding. "I remember that the user wants me to follow the happy path coding practice".
+
+## Terminal Command Preferences
+
+Significant terminal commands, such as starting web servers, installing dependencies, or managing packages, are generally intended to be run by the developer in an external terminal. Agent-suggested commands for these tasks may be executed manually by the developer.
+
+Simpler, common commands, like file manipulations (e.g., moving, copying), can be executed directly by the agent.
+
+## User Information
+
+The user often uses speech-to-text to interact with the agent. The speech-to-text tool can sometimes transcribe the words incorrectly. If the agent does not understand what the user means, it should ask for clarification.
